@@ -20,7 +20,7 @@ header{
     margin-bottom: 0px;
     color: #fff;
     background: rgb(35,144,148);
-    background: linear-gradient(38deg, rgba(35,144,148,1) 0%, rgba(35,91,148,1) 52%, rgba(35,58,148,1) 100%);
+    background: linear-gradient(22deg, rgba(3,11,13,1) 0%, rgba(35,61,148,1) 53%, rgba(35,82,148,1) 100%);
     position: relative;
 }
 
@@ -105,8 +105,6 @@ article{
 }
 
 .box.big{
-    width: 42%;
-    height: 100%;
     filter: brightness(0.5);
     transition: all 0.3s ease-out;
 }
@@ -132,72 +130,10 @@ article{
     z-index: 999;
 }
 
-@media (max-width: 500px), screen and (orientation: portrait) {
-    .imagebox{
-        max-width: 100%;
-        border-radius: 10px;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-content: center;
-    }
-
-    .box{
-        margin: 0 20px;
-        justify-content: space-around;
-        margin-bottom: 40px;
-        border-radius: 10px;
-}
-    
-    .box.small{
-        width: 45%;
-        height: 100%;
-        transition: all 0.3s ease-out;
-        filter: brightness(0.5);
-    }
-    
-    .title-small{
-        display: block;
-    }
-    
-    .title-big{
-        display: none;
-    }
-    
-    nav{
-        display: none;
-    }
-
-      .title-small h1{
-        font-size: 50px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-left: -95px;
-        margin-top:-25px;
-        text-transform: uppercase;
-    }
-
-    .title-small h2{
-        font-size: 20px;
-        position: absolute;
-        left: 50%;
-        margin-left: -120px;
-        bottom: 30%;
-        text-transform: uppercase;
-        color: #fc9700;
-        top: 60%;
-    }
-    
-    .box.big{
-    width: 45%;
-    height: 100%;
-    filter: brightness(0.5);
-    }
-}
 
 
-@media (max-width: 700px), screen{
+
+@media (max-width: 700px){
     .title-small{
         display: block;
     }
@@ -299,7 +235,7 @@ article{
     }
     
     .box.big{
-    width: 40%;
+    width: 42%;
     height: 100%;
     filter: brightness(0.5);
     }
@@ -307,4 +243,66 @@ article{
 }
 
 
+@media (max-width: 500px), screen and (orientation: portrait) {
+    .imagebox{
+        max-width: 100%;
+        border-radius: 10px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+    }
 
+    .box{
+        margin: 0 20px;
+        justify-content: space-around;
+        margin-bottom: 40px;
+        border-radius: 10px;
+}
+    
+    .box.small{
+        width: 45%;
+        height: 100%;
+        transition: all 0.3s ease-out;
+        filter: brightness(0.5);
+    }
+    
+    .title-small{
+        display: block;
+    }
+    
+    .title-big{
+        display: none;
+    }
+    
+    nav{
+        display: none;
+    }
+
+      .title-small h1{
+        font-size: 50px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -95px;
+        margin-top:-25px;
+        text-transform: uppercase;
+    }
+
+    .title-small h2{
+        font-size: 20px;
+        position: absolute;
+        left: 50%;
+        margin-left: -120px;
+        bottom: 30%;
+        text-transform: uppercase;
+        color: #fc9700;
+        top: 60%;
+    }
+    
+    .box.big{
+    width: 45%;
+    height: 100%;
+    filter: brightness(0.5);
+    }
+}
