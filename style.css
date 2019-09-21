@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins|Quicksand&display=swap');
+
+p, li{
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1, h2, h3, h4 ,h5{
+    font-family: 'Poppins', sans-serif;
+}
+    
+body{
+    height: auto;
+    width: 100vw;
+    
+}
+
+#wrapper{
+    max-width: 1140px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    height: 150px;
+    padding-bottom: 20px;
+    color: #fff;
+    position: relative;
+    background: rgb(35,144,148);
+    background: linear-gradient(38deg, rgba(35,144,148,1) 0%, rgba(35,91,148,1) 52%, rgba(35,58,148,1) 100%);
+}
+
+.title-big h1{
+    font-size: 50px;
+    position: absolute;
+    left: 10%;
+    bottom: 24%;
+    text-transform: uppercase;
+}
+
+.title-big h2{
+    font-size: 25px;
+    position: absolute;
+    bottom: 7%;
+    left: 10%;
+    text-transform: uppercase;
+    border-left: 15px solid #ff5500;
+    padding-left: 10px;
+    color: #fc9700;
+}
+
+.title-small{
+    display:none;
+}
+
+.title-small h1{
+    font-size: 50px;
+    position: absolute;
+    bottom: 24%;
+    left: 50%;
+    margin-left: -95px;
+    text-transform: uppercase;
+}
+
+.title-small h2{
+    font-size: 25px;
+    position: absolute;
+    left: 50%;
+    margin-left: -150px;
+    bottom: 7%;
+    text-transform: uppercase;
+    color: #fc9700;
+}
+
+
+nav{
+    position: absolute;
+    bottom: 7%;
+    right: 10%;
+}
+
+header li{
+    display: inline-block;
+    padding-left: 30px;
+}
+
+i.material-icons.nav{
+    font-size: 20px;
+    padding-right: 10px;
+    vertical-align: middle;
+    position: relative;
+    top: -3px;
+}
+
+header li:hover{
+    color: #ff5500;
+    cursor: pointer;
+}
+
+.imagebox{
+    margin: 50px 0;
+    max-width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.box{
+    margin: 0 10px;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+.box.small{
+    width: 208px;
+    height: 290px;
+}
+
+.box.big{
+    width: 550px;
+    height: 770px;
+}
+
+.image{
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.box.small:hover{
+    filter:brightness(0.5);
+    cursor: pointer;
+}
+
+m
+
+
+
