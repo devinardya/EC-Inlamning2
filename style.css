@@ -241,7 +241,7 @@ article{
 }
 
 @media (min-width: 2000px){
-     .box.big{
+     .box.small{
         width: 400px;
         height: 600px;
     }
