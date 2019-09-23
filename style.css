@@ -200,7 +200,7 @@ article{
         justify-content: space-around;
         margin-bottom: 40px;
         border-radius: 10px;
-}
+    }
     
     .box.small{
         width: 42%;
@@ -250,17 +250,17 @@ article{
     
     .text-box{
         bottom: 0;
-}
+    }
     
     .text-box.big{
         bottom: 0;
         height: 20%;
-}
+    }
     
     .text-box.big p:first-child{
         margin-top: 25px;
         margin-bottom: 5px;
-}
+    }
     
 }
 
@@ -282,7 +282,7 @@ article{
         justify-content: space-around;
         margin-bottom: 40px;
         border-radius: 10px;
-}
+    }
     
     .box.small{
         width: 300px;
@@ -321,6 +321,20 @@ article{
      .box.small{
         width: 400px;
         height: 600px;
+    }
+    
+    .text-box{
+        bottom: 3.5%;
+    }
+
+    .text-box p:first-child{
+        margin-top: 45px;
+        margin-bottom: 5px;
+    }
+
+    .text-box.big p:first-child{
+        margin-top: 55px;
+        margin-bottom: 5px;
     }
 }
 
