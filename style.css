@@ -115,7 +115,7 @@ article{
 }
 
 .text-box p:first-child{
-    margin-top: 18px;
+    margin-top: 12px;
     margin-bottom: 5px;
     font-weight: 700;
 }
@@ -255,7 +255,7 @@ article{
 
 @media (min-width: 701px){
      .imagebox{
-        max-width: 80%;
+        max-width: 90%;
         border-radius: 10px;
         display: flex;
         flex-flow: row wrap;
@@ -272,7 +272,7 @@ article{
     }
     
     .box.small{
-        width: 240px;
+        width: 250px;
         height: 320px;
         transition: all 0.3s ease-out;
         filter: brightness(0.5);
@@ -305,26 +305,48 @@ article{
 }
 
 
-/* HIGH-RES SCREEN (ABOVE 2000PX) */
+/* HIGH-RES SCREEN (ABOVE 1900PX) */
 
-@media (min-width: 2000px){
+@media (min-width: 1900px){
+    .imagebox{
+        max-width: 90%;
+        border-radius: 10px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+        margin: 0 auto;
+    }
      .box.small{
-        width: 400px;
-        height: 600px;
+        width: 300px;
+        height: 420px;
     }
     
     .text-box{
-        bottom: 3.5%;
+        bottom: 0;
     }
 
     .text-box p:first-child{
-        margin-top: 45px;
+        margin-top: 25px;
         margin-bottom: 5px;
     }
 
     .text-box.big p:first-child{
-        margin-top: 55px;
+        margin-top: 35px;
         margin-bottom: 5px;
+    }
+    
+     .box.big{
+        width: 46.6%;
+        height: 100%;
+        filter: brightness(0.5);
     }
 }
 
+@media (min-width: 2000px){
+    .box.small{
+        width: 400px;
+        height: 520px;
+    }
+    
+}
