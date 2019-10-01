@@ -98,7 +98,7 @@ article{
 
 
 .text-box{
-    height: 20%;
+    height: 70px;
     width: 100%;
     background: rgb(106,19,157);
     background: linear-gradient(144deg, rgba(106,19,157,1) 0%, rgba(12,23,68,1) 100%);
@@ -111,28 +111,12 @@ article{
 }
 
 .text-box p{
-    text-align: center;
+    text-align: center
 }
 
 .text-box p:first-child{
-    margin-top: 12px;
-    margin-bottom: 5px;
     font-weight: 700;
-}
-
-.text-box.big{
-    bottom: 0;
-    height: 10%;
-}
-
-.text-box.big p:first-child{
-    margin-top: 25px;
-    margin-bottom: 5px;
-}
-
-.box.big{
-    filter: brightness(0.5);
-    transition: all 0.3s ease-out;
+    margin-top: 20px;
 }
 
 .image{
@@ -155,16 +139,6 @@ article{
     opacity: 1;
 }
 
-.box.big:hover{
-    filter:brightness(1);
-    cursor: pointer;
-    transform: scale(1.1);
-    z-index: 999;
-}
-
-.box.big:hover .text-box, p{
-    opacity: 1;
-}
 
 /* --- MEDIA QUERIES --- */
 
@@ -189,10 +163,12 @@ article{
     
     .box.small{
         width: 42%;
-        height: 390px;
+        height: auto;
         transition: all 0.3s ease-out;
         filter: brightness(0.5);
         overflow: hidden;
+        flex-grow: 6;
+        position: relative;
     }
     
     .title-small{
@@ -226,31 +202,7 @@ article{
         text-transform: uppercase;
         color: #fc9700;
     }
-    
-    .box.big{
-        width: 42%;
-        height: 100%;
-        filter: brightness(0.5);
-    }
 
-    
-    .text-box{
-        bottom: 0;
-    }
-    
-    .text-box.big{
-        bottom: 0;
-        height: 20%;
-    }
-    
-    .text-box p:first-child{
-        margin-top: 20px;
-}
-    
-    .text-box.big p:first-child{
-        margin-top: 25px;
-        margin-bottom: 5px;
-    }
     
 }
 
@@ -277,11 +229,12 @@ article{
     
     .box.small{
         width: 210px;
-        height: 320px;
+        height: auto;
         transition: all 0.3s ease-out;
         filter: brightness(0.5);
         overflow: hidden;
         object-fit: cover;
+        flex-grow: 6;
     }
     
  
@@ -302,11 +255,6 @@ article{
         padding-left: 10px;
     }
     
-    .box.big{
-        width: 42.5%;
-        height: 100%;
-        filter: brightness(0.5);
-    }
 }
 
 
@@ -324,34 +272,18 @@ article{
     }
      .box.small{
         width: 300px;
-        height: 420px;
+        height: auto;
+        flex-grow: 6;
     }
     
-    .text-box{
-        bottom: 0;
-    }
 
-    .text-box p:first-child{
-        margin-top: 25px;
-        margin-bottom: 5px;
-    }
-
-    .text-box.big p:first-child{
-        margin-top: 35px;
-        margin-bottom: 5px;
-    }
-    
-     .box.big{
-        width: 46.6%;
-        height: 100%;
-        filter: brightness(0.5);
-    }
 }
 
 @media (min-width: 2000px){
     .box.small{
         width: 400px;
-        height: 520px;
+        height: auto;
+        flex-grow: 6;
     }
     
 }
